@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <title>pókemon</title>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/battlestyle.css">
+  </head>
+
+  <body>
+    <audio autoplay loop>
+      <source src="music/buttle_music.mp3" type="audio/mpeg">
+      your computer dont support this element
+    </audio>
+    <main>
+     <nav>
+      <a href="start.html">Exit</a>
+     </nav>
+
+     <div id="bar">
+      <img src="" alt="monster">
+      <progress id="health1" value="100" max="100"></progress>
+    
+      <img src="" alt="monster">
+      <progress id="health2" value="100" max="100"></progress>
+     </div>
+
+      <div id="move1">
+        <button onclick="attackbutton1p1()">move1</button>
+        <button onclick="attackbutton2p1()">move</button> 
+        <button onclick="attackbutton3p1()">move</button> 
+        <button onclick="attackbutton4p1()">move</button>
+      </div>  
+      <div id="move2">
+        <button onclick="myFuntcion1p2()">move</button>
+        <button onclick="myFuntcion2p2()">move</button>
+        <button onclick="myFuntcion3p2()">move</button>
+        <button onclick="myFuntcion4p2()">move</button>
+      </div>
+      <script src="battle.js"></script>
+      <script src="costym.js"></script>
+    </main>
+  </body>
+</html>
