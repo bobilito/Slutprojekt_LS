@@ -6,7 +6,7 @@
   "monster1 nav monster2";
 grid-template-columns: repeat(3, 0.25fr);
 grid-template-rows: repeat(2, 0.25fr);
-  background-image: url('../img/pokemonart.png');
+  background-image: url("../img/pokemonart.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
