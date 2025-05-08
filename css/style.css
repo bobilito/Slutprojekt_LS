@@ -18,9 +18,11 @@ img{
 }
 #genesect{
  grid-area: monster1;
+ justify-self: center;
 }
 #Haxurous{
  grid-area: monster2;
+ justify-self: center;
 }
 h1{ 
   grid-area: header;
