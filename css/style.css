@@ -11,10 +11,11 @@ grid-template-rows: repeat(2, 0.25fr);
   background-repeat: no-repeat;
   background-position: center;
   padding: 6vh;
+  width: fit-content;
 }
 img{
-  height: 70vh;
-  width: 70vh;
+  height: 10vh;
+  width: 10vh;
 }
 #genesect{
  grid-area: monster1;
@@ -123,7 +124,9 @@ progress {
 }
 
 /*costym*/
-
+.button{
+  justify-self: center;
+}
 button {
   background-color: #4CAF50;
   border: none;
@@ -149,10 +152,10 @@ button:focus {
 #box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: reapet(2, 1fr);
   gap: 20px;
   width: 100%;
   max-width: 600px;
+  justify-self: center;
 }
 
 form {
@@ -179,8 +182,11 @@ option {
   display:flex;
   flex-direction: row;
   gap:10px;
+  justify-self: center;
 }
-
+footer{
+  justify-self: center;
+}
 
 
 /*index*/
@@ -212,7 +218,7 @@ option {
 
   img {
     height: 60vh;
-    width: 60vh;
+    width: 46.9vh;
   }
 
   h1 {
@@ -233,7 +239,7 @@ option {
 /*costym*/
 @media (max-width: 768px) {
   body {
-    padding: 10px;
+    padding: 0vh;
   }
 
   #box1, #box2 {
@@ -241,8 +247,8 @@ option {
   }
 
   button {
-    width: 100%;
-    padding: 12px;
+    width: 95%;
+    padding: 1.5vh;
     font-size: 18px;
   }
 
@@ -279,8 +285,8 @@ option {
   }
 
   img {
-    height: 50vh;
-    width: 50vh;
+    height: 41vh;
+    width: 41vh;
   }
 
   h1 {
@@ -306,13 +312,16 @@ option {
 
 /*index*/
 @media (max-width: 400px) {
+  body{
+    padding: 0vh;
+  }
   #container {
     padding: 3vh;
   }
 
   img {
-    height: 45vh;
-    width: 45vh;
+    height: 43vh;
+    width: 43vh;
   }
 
   h1 {
@@ -332,5 +341,8 @@ option {
   }
   #Haxurous #genesect{
     display: none;
+  }
+  p{
+    font-size: 0.7rem;
   }
 }/*index*/
