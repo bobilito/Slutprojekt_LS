@@ -11,11 +11,15 @@ grid-template-rows: repeat(2, 0.25fr);
   background-repeat: no-repeat;
   background-position: center;
   padding: 6vh;
-  width: fit-content;
+  width: 100%;
+  box-sizing: border-box;
+}
+body{
+  justify-items: center;
 }
 img{
   height: 10vh;
-  width: 10vh;
+  width: 3vh;
 }
 #genesect{
  grid-area: monster1;
@@ -84,7 +88,7 @@ nav a:hover {
   margin-bottom: 2vh;
 }
 
-#bar img {
+#bar .battlemonster {
   width: 35vh;
   height: auto;
   margin-right: 1vh;
@@ -193,12 +197,13 @@ footer{
 @media (min-width: 1200px) {
   #container {
     grid-template-columns: repeat(3, 1fr);
-    padding: 8vh;
+    padding: 0vh;
+    width: 100%;
   }
 
   img {
-    height: 80vh;
-    width: 80vh;
+    height: 65vh;
+    width: 44vh;
   }
 
   h1 {
@@ -218,7 +223,7 @@ footer{
 
   img {
     height: 60vh;
-    width: 46.9vh;
+    width: 34vh;
   }
 
   h1 {
@@ -240,6 +245,19 @@ footer{
 @media (max-width: 768px) {
   body {
     padding: 0vh;
+  }
+  #container{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "monster1"
+    "nav"
+    "monster2";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  }
+  nav a{
+    font-size: 3rem;
   }
 
   #box1, #box2 {
@@ -286,7 +304,7 @@ footer{
 
   img {
     height: 41vh;
-    width: 41vh;
+    width: 38vh;
   }
 
   h1 {
@@ -308,6 +326,9 @@ footer{
     display:grid;
     justify-self: center;
   }
+  nav a{
+    font-size: 2.2rem;
+  }
 }/*battle/index*/
 
 /*index*/
@@ -320,8 +341,8 @@ footer{
   }
 
   img {
-    height: 43vh;
-    width: 43vh;
+    height: 40vh;
+    width: 33vh;
   }
 
   h1 {
@@ -346,3 +367,9 @@ footer{
     font-size: 0.7rem;
   }
 }/*index*/
+@media (max-width: 320px) {
+  img{
+    width: 28vh;
+    height: 28vh;
+  }
+}
