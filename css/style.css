@@ -19,7 +19,7 @@ body{
 }
 img{
   height: 10vh;
-  width: 3vh;
+  width: 10vh;
 }
 #genesect{
  grid-area: monster1;
